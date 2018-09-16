@@ -1,0 +1,181 @@
+/* Diameter: 57.2mm */
+
+:root {
+    --american-pool-ball-size: 57.2px;
+    --american-pool-ball-font-size: calc(var(--american-pool-ball-size) / 4.5);
+    --american-pool-ball-circle-radius: calc(var(--american-pool-ball-size) / 2.6);
+    --american-pool-ball-stripe-height: calc(var(--american-pool-ball-size) / 1.6);
+}
+
+.ball_type_american-pool {
+    position: relative;
+    display: inline-block;
+    width: var(--american-pool-ball-size);
+    height: var(--american-pool-ball-size);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial;
+    background-color: #fef7e0;
+}
+
+.ball_type_american-pool:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    width: var(--american-pool-ball-circle-radius);
+    height: var(--american-pool-ball-circle-radius);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 100%;
+    background-color: #fef7e0;
+    font-size: var(--american-pool-ball-font-size);
+    line-height: var(--american-pool-ball-circle-radius);
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.ball_type_american-pool.ball_cue {
+    background-color: #fef7e0;
+}
+
+.ball_type_american-pool.ball_num_1 {
+    background-color: #ffde12;
+}
+
+.ball_type_american-pool.ball_num_1:before {
+    content: '1';
+}
+
+.ball_type_american-pool.ball_num_2 {
+    background-color: #1f32a8;
+}
+
+.ball_type_american-pool.ball_num_2:before {
+    content: '2';
+}
+
+.ball_type_american-pool.ball_num_3 {
+    background-color: #d70a05;
+}
+
+.ball_type_american-pool.ball_num_3:before {
+    content: '3';
+}
+
+.ball_type_american-pool.ball_num_4 {
+    background-color: #9f04b7;
+}
+
+.ball_type_american-pool.ball_num_4:before {
+    content: '4';
+}
+
+.ball_type_american-pool.ball_num_5 {
+    background-color: #f58517;
+}
+
+.ball_type_american-pool.ball_num_5:before {
+    content: '5';
+}
+
+.ball_type_american-pool.ball_num_6 {
+    background-color: #2b8a08;
+}
+
+.ball_type_american-pool.ball_num_6:before {
+    text-decoration: underline;
+    content: '6';
+}
+
+.ball_type_american-pool.ball_num_7 {
+    background-color: #6f3408;
+}
+
+.ball_type_american-pool.ball_num_7:before {
+    content: '7';
+}
+
+.ball_type_american-pool.ball_num_8 {
+    background-color: #08090e;
+}
+
+.ball_type_american-pool.ball_num_8:before {
+    content: '8';
+}
+
+.ball_type_american-pool.ball_num_9:after,
+.ball_type_american-pool.ball_num_10:after,
+.ball_type_american-pool.ball_num_11:after,
+.ball_type_american-pool.ball_num_12:after,
+.ball_type_american-pool.ball_num_13:after,
+.ball_type_american-pool.ball_num_14:after,
+.ball_type_american-pool.ball_num_15:after {
+    position: absolute;
+    z-index: 10;
+    content: '';
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: var(--american-pool-ball-stripe-height);
+    transform: translateY(-50%);
+}
+
+.ball_type_american-pool.ball_num_9:after {
+    background-color: #ffde12;
+}
+
+.ball_type_american-pool.ball_num_9:before {
+    text-decoration: underline;
+    content: '9';
+}
+
+.ball_type_american-pool.ball_num_10:after {
+    background-color: #1f32a8;
+}
+
+.ball_type_american-pool.ball_num_10:before {
+    content: '10';
+}
+
+.ball_type_american-pool.ball_num_11:after {
+    background-color: #d70a05;
+}
+
+.ball_type_american-pool.ball_num_11:before {
+    content: '11';
+}
+
+.ball_type_american-pool.ball_num_12:after {
+    background-color: #9f04b7;
+}
+
+.ball_type_american-pool.ball_num_12:before {
+    content: '12';
+}
+
+.ball_type_american-pool.ball_num_13:after {
+    background-color: #f58517;
+}
+
+.ball_type_american-pool.ball_num_13:before {
+    content: '13';
+}
+
+.ball_type_american-pool.ball_num_14:after {
+    background-color: #2b8a08;
+}
+
+.ball_type_american-pool.ball_num_14:before {
+    content: '14';
+}
+
+.ball_type_american-pool.ball_num_15:after {
+    background-color: #6f3408;
+}
+
+.ball_type_american-pool.ball_num_15:before {
+    content: '15';
+}

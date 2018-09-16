@@ -1,0 +1,103 @@
+/* Diameter: 68mm */
+
+:root {
+    --russian-pool-ball-size: 68px;
+    --russian-pool-ball-font-size: calc(var(--russian-pool-ball-size) / 4.5);
+    --russian-pool-ball-circle-radius: calc(var(--russian-pool-ball-size) / 2.6);
+}
+
+.ball_type_russian-pool {
+    position: relative;
+    display: inline-block;
+    width: var(--russian-pool-ball-size);
+    height: var(--russian-pool-ball-size);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial;
+    background-color: #f7ecda;
+}
+
+.ball_type_russian-pool:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 20;
+    width: var(--russian-pool-ball-circle-radius);
+    height: var(--russian-pool-ball-circle-radius);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 100%;
+    background-color: #e7ddb8;
+    font-size: var(--russian-pool-ball-font-size);
+    line-height: var(--russian-pool-ball-circle-radius);
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.ball_type_russian-pool.ball_cue {
+    background-color:#feae05;
+}
+
+.ball_type_russian-pool.ball_num_1:before {
+    content: '1';
+}
+
+.ball_type_russian-pool.ball_num_2:before {
+    content: '2';
+}
+
+.ball_type_russian-pool.ball_num_3:before {
+    content: '3';
+}
+
+.ball_type_russian-pool.ball_num_4:before {
+    content: '4';
+}
+
+.ball_type_russian-pool.ball_num_5:before {
+    content: '5';
+}
+
+.ball_type_russian-pool.ball_num_6:before {
+    text-decoration: underline;
+    content: '6';
+}
+
+.ball_type_russian-pool.ball_num_7:before {
+    content: '7';
+}
+
+.ball_type_russian-pool.ball_num_8:before {
+    content: '8';
+}
+
+.ball_type_russian-pool.ball_num_9:before {
+    text-decoration: underline;
+    content: '9';
+}
+
+.ball_type_russian-pool.ball_num_10:before {
+    content: '10';
+}
+
+.ball_type_russian-pool.ball_num_11:before {
+    content: '11';
+}
+
+.ball_type_russian-pool.ball_num_12:before {
+    content: '12';
+}
+
+.ball_type_russian-pool.ball_num_13:before {
+    content: '13';
+}
+
+.ball_type_russian-pool.ball_num_14:before {
+    content: '14';
+}
+
+.ball_type_russian-pool.ball_num_15:before {
+    content: '15';
+}

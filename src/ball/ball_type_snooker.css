@@ -1,0 +1,52 @@
+/* Diameter: 52.4mm */
+
+:root {
+    --snooker-ball-size: 52.4px;
+    --snooker-ball-font-size: calc(var(--snooker-ball-size) / 4);
+    --snooker-ball-circle-radius: calc(var(--snooker-ball-size) / 2.4);
+    --snooker-ball-stripe-height: calc(var(--snooker-ball-size) / 1.6);
+}
+
+.ball_type_snooker {
+    position: relative;
+    display: inline-block;
+    width: var(--snooker-ball-size);
+    height: var(--snooker-ball-size);
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.ball_type_snooker.ball_cue {
+    background-color: #fef7e0;
+}
+
+.ball_type_snooker.ball_color_yellow {
+    background-color: #f9b90b;
+}
+
+.ball_type_snooker.ball_color_blue {
+    background-color: #4885c6;
+}
+
+.ball_type_snooker.ball_color_green {
+    background-color: #038c6d;
+}
+
+.ball_type_snooker.ball_color_pink {
+    background-color: #fd9693;
+}
+
+.ball_type_snooker.ball_color_black {
+    background-color: #060605;
+}
+
+.ball_type_snooker.ball_color_brown {
+    background-color: #a45111;
+}
+
+.ball_type_snooker.ball_color_red {
+    background-color: #de050f;
+}
